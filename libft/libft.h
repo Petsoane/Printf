@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lpetsoan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lpetsoan <lpetsoan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 08:06:08 by lpetsoan          #+#    #+#             */
-/*   Updated: 2019/09/05 12:49:08 by lpetsoan         ###   ########.fr       */
+/*   Updated: 2020/01/07 08:56:57 by lpetsoan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,4 +93,5 @@ int						ft_max_wordlen(const char *s, char c);
 char					*ft_strtimc(const char *s, char c);
 char					*ft_strndup(const char *s, size_t n);
 int						print_form(const char *form, ...);
+void					ft_putfloat(double num, int precision);
 #endif

@@ -12,10 +12,14 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
+#include <stdio.h>
 int main(void)
 {
 	/* Dont forget to fix the workings of the float conversion. */
-	ft_printf("Hello world of c");
+	char *str = "wassup";
+	ft_printf("Hello worlduu of %12.8c %s %p %1.2lf", 'v', "Hello world", str, 10.45);
+	printf("\n%llf %ld", 10.89, 19);
+	printf("\nBuiltin: %p", str);
+
 	return (0);
 }

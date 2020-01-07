@@ -6,7 +6,7 @@
 #    By: lpetsoan <lpetsoan@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/12 13:00:10 by lpetsoan          #+#    #+#              #
-#    Updated: 2020/01/06 15:45:47 by lpetsoan         ###   ########.fr        #
+#    Updated: 2020/01/07 07:57:05 by lpetsoan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ SRC = ft_printf.c
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
+	./build.sh
 
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)

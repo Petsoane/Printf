@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lpetsoan <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: lpetsoan <lpetsoan@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/20 08:07:20 by lpetsoan          #+#    #+#              #
-#    Updated: 2019/09/05 12:43:53 by lpetsoan         ###   ########.fr        #
+#    Updated: 2020/01/07 08:55:21 by lpetsoan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,6 +76,7 @@ SRC = ft_atoi.c \
 	  ft_strndup.c\
 	  get_next_line.c\
 	  print_form.c\
+      ft_putfloat.c\
 
 OBJ = $(SRC:.c=.o)
 

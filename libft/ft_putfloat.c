@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putfloat.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lpetsoan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lpetsoan <lpetsoan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/27 09:49:04 by lpetsoan          #+#    #+#             */
-/*   Updated: 2019/06/27 10:00:42 by lpetsoan         ###   ########.fr       */
+/*   Updated: 2020/01/07 15:19:43 by lpetsoan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,19 @@
 
 void		ft_putfloat(double num, int precision)
 {
-	int		base;
-	int		fract;
+	long		base;
+	float		fract;
+	int 		prec;
 
-	base = num;
-	fract = (num - base) * precision + 0.001;
+	prec = 1;
+	while (precision--)
+	{
+		prec *= 10;
+	}
+
+	base = (int)num;
+	fract = (num - (double)base) * prec; 
 	ft_putnbr(base);
-	ft_putchar('\n');
+	ft_putchar('.');
 	ft_putnbr(fract);
 }
