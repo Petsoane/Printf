@@ -6,12 +6,11 @@
 /*   By: lpetsoan <lpetsoan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/06 14:19:18 by lpetsoan          #+#    #+#             */
-/*   Updated: 2020/01/08 13:07:55 by lpetsoan         ###   ########.fr       */
+/*   Updated: 2020/01/08 13:33:51 by lpetsoan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
 
 static void print_spaces(char *split)
 {
@@ -23,7 +22,6 @@ static void print_spaces(char *split)
     while (spaces--)
         ft_putchar(' ');
 }
-
 
 static void process_split(char *split, va_list list)
 {
@@ -76,4 +74,3 @@ int ft_printf(const char *str, ...)
     }
     return (0);
 }
-
