@@ -6,7 +6,7 @@
 #    By: lpetsoan <lpetsoan@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/12 13:00:10 by lpetsoan          #+#    #+#              #
-#    Updated: 2020/01/08 12:48:27 by lpetsoan         ###   ########.fr        #
+#    Updated: 2020/01/08 15:19:31 by lpetsoan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,8 @@ SRC =	ft_printf.c\
 		print_strings.c\
 		print_conv.c\
 		print_decimal.c\
+		utils.c\
+		process_spec.c\
 
 
 

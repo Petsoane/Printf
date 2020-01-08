@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lpetsoan <lpetsoan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/06 14:19:18 by lpetsoan          #+#    #+#             */
-/*   Updated: 2020/01/08 15:28:41 by lpetsoan         ###   ########.fr       */
+/*   Created: 2020/01/08 15:11:44 by lpetsoan          #+#    #+#             */
+/*   Updated: 2020/01/08 15:12:42 by lpetsoan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int                 ft_printf(const char *str, ...)
+void         print_spaces(char *split)
 {
-    char            **split;
-    va_list         list;
+    char *min_width;
+    int spaces;
 
-    va_start(list, str);
-    split =ft_strsplit(str, ' ');
-    while(*split)
-    {
-		if (ft_strchr(*split, '%'))
-            process_split(*split, list);
-        else
-            ft_putstr(*split);
-        if (*(split + 1) != NULL)
-            ft_putchar(' ');
-        split++;
-    }
-    return (0);
+    min_width = get_minFieldWidth(split);
+    spaces = ft_atoi(min_width);
+    while (spaces--)
+        ft_putchar(' ');
 }
