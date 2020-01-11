@@ -6,7 +6,7 @@
 /*   By: lpetsoan <lpetsoan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/06 14:23:02 by lpetsoan          #+#    #+#             */
-/*   Updated: 2020/01/08 15:35:36 by lpetsoan         ###   ########.fr       */
+/*   Updated: 2020/01/11 08:40:30 by lpetsoan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ typedef struct		s_type
 }					t_flags;
 
 char				*get_precision(char *split);
-char				*get_minFieldWidth(char *split);
+char				*get_minfieldwidth(char *split);
 void				get_flags(char *split, t_flags *flags);
 int					ft_printf(const char *, ...);
 void				print_char(va_list list);
