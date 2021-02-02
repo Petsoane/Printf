@@ -16,10 +16,15 @@
 int main(void)
 {
 	/* Dont forget to fix the workings of the float conversion. */
-	char *str = "wassup";
-	ft_printf("Hello worlduu of %12.8c %s %p %1.2lf %u", 'v', "Hello world", str, 10.45, 15);
-	printf("\n%llf %ld", 10.89, 19);
-	printf("\nBuiltin: %p", str);
+//	char *str = "wassup";
+  printf("This is a simple test from the in built printf function\n");
+  ft_printf("This is another simple test from my printf function\n");
+  
+  // Testing the integer printing of the printf function.
+  ft_putstr("## Testing numbers ##\n");
+  printf("%d\n", 100);
+  ft_printf("%d\n", 100);
+
 
 	return (0);
 }

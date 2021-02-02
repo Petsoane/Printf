@@ -39,5 +39,5 @@ void    print_pointer(va_list list)
 
     pointer = va_arg(list, void *);
     ft_putstr("0x10");
-    ft_baseconv((unsigned int) pointer, 16);
+    ft_baseconv((intptr_t) pointer, 16);
 }

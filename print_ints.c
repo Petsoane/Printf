@@ -27,7 +27,7 @@ void print_int(char *split, va_list list)
     int c;
 
 
-    num = va_arg(list, long double);
+    num = va_arg(list, int);
     if (ft_strchr(split, 'h'))
     {
         a = (short int)num;
