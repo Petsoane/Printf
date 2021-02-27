@@ -25,6 +25,7 @@ int		ft_printf(const char *str, ...)
 			process_split(*split, list);
 		else
 			ft_putstr(*split);
+		// TODO I need to make sure that this part of the code works proper
 		if (*(split + 1) != NULL)
 			ft_putchar(' ');
 		split++;

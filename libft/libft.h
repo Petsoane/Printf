@@ -86,7 +86,7 @@ int						ft_wordlen(char const *ss, char c);
 int						ft_wordcount(char const *s, char c);
 void					ft_removeend(char **out, int i);
 int						ft_digitlen(int num);
-void					ft_baseconv(int input, int base);
+void					ft_baseconv(intptr_t input, int base);
 char					*ft_strrev(char *s);
 char					*ft_ifalloc(int isneg, int size);
 int						ft_max_wordlen(const char *s, char c);

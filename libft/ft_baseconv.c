@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_baseconv(int input, int base)
+void	ft_baseconv(intptr_t input, int base)
 {
 	const char *v_base = "0123456789ABCDEF";
 

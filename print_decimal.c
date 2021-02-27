@@ -12,6 +12,9 @@
 
 #include "ft_printf.h"
 
+// TODO Fix my cconversion of the floating point string.
+// for some reason it is not converting properly
+// It seems to be incorrectly losing some precision.
 void    print_float(va_list list, char *precision)
 {
     float num;
@@ -19,6 +22,7 @@ void    print_float(va_list list, char *precision)
 
     prec = ft_atoi(precision);
     num = va_arg(list, double);
+    // NOTE maybe my precision handler is a little faulty
     if (prec !=  0)
         ft_putfloat(num, prec);
     else

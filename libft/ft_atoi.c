@@ -41,6 +41,7 @@ int			ft_atoi(const char *num)
 		out = (out * 10) + (*num - '0');
 		num++;
 	}
+	// negate the value if it was supposed to be negative
 	out = sign == 1 ? -out : out;
 	return ((int)out);
 }

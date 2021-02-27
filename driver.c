@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -22,8 +21,14 @@ int main(void)
   
   // Testing the integer printing of the printf function.
   ft_putstr("## Testing numbers ##\n");
-  printf("%d\n", 100);
-  ft_printf("%d\n", 100);
+
+  ft_putendl("\t#testing decimals#");
+  printf("%d 2j\n", 100);
+  ft_printf("%d 2j\n", 100);
+
+  ft_putendl("\t#Testing floating point numbers");
+  printf("%f \n", 199.87);
+  ft_printf("%f \n", 199.87);
 
 
 	return (0);

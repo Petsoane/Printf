@@ -12,10 +12,12 @@
 
 #include "libft.h"
 
+// TODO Rework how the splitting of the number is done,
+// Right now it is losing a single point of 'precision'
 void		ft_putfloat(double num, int precision)
 {
 	long		base;
-	float		fract;
+	double		fract;
 	int 		prec;
 
 	prec = 1;
