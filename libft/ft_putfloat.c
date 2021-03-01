@@ -14,8 +14,9 @@
 
 void		ft_putfloat(double num, int precision)
 {
-	int		base;
+	int		    base;
 	double		fract;
+	long         tmp_fract;
 	int 		prec;
 
 	prec = 1;
@@ -26,7 +27,8 @@ void		ft_putfloat(double num, int precision)
 
 	base = (int)num;
 	fract = (num - base) * prec;
+	tmp_fract = (long) (fract + 0.5);
 	ft_putnbr(base);
 	ft_putchar('.');
-	ft_putnbr(fract);
+	ft_putnbr(tmp_fract);
 }
