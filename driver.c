@@ -27,8 +27,8 @@ int main(void)
   ft_printf("%d 2j\n", 100);
 
   ft_putendl("\t#Testing floating point numbers");
-  printf("%f \n", 199.87);
-  ft_printf("%f \n", 199.87);
+  printf("%f \n", 199.873);
+  ft_printf("%f \n", 199.873);
 
 
 	return (0);

@@ -17,7 +17,7 @@
 // It seems to be incorrectly losing some precision.
 void    print_float(va_list list, char *precision)
 {
-    float num;
+    double num;
     int prec;
 
     prec = ft_atoi(precision);
@@ -26,5 +26,5 @@ void    print_float(va_list list, char *precision)
     if (prec !=  0)
         ft_putfloat(num, prec);
     else
-        ft_putfloat(num, 2);
+        ft_putfloat(num, 6);
 }
