@@ -14,7 +14,6 @@
 # define LIBFT_H
 # include <string.h>
 # include <stdlib.h>
-# include "get_next_line.h"
 # include <stdarg.h>
 
 typedef struct			s_list
@@ -45,7 +44,7 @@ char					*ft_strtrimc(char const *s, char c);
 void					ft_putchar(char c);
 void					ft_putstr(char const *s);
 void					ft_putendl(char const *s);
-void					ft_putnbr(int n);
+void					ft_putnbr(long long int n);
 void					ft_putchar_fd(char c, int fd);
 void					ft_putstr_fd(char const *s, int fd);
 void					ft_putendl_fd(char const *s, int fd);

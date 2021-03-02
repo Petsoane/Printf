@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_putnbr(int num)
+void	ft_putnbr(long long int num)
 {
 	char	ch;
 	int		is_lim;

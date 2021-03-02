@@ -24,10 +24,10 @@ void print_int(char *split, va_list list)
     char *end;
     short int a;
     long b;
-    int c;
+    long long c;
 
 
-    num = va_arg(list, int);
+    num = va_arg(list, long int);
     if (ft_strchr(split, 'h'))
     {
         a = (short int)num;
@@ -35,7 +35,7 @@ void print_int(char *split, va_list list)
     }
     if (!ft_strstr(split, "ll"))
     {
-        c = (int)num;
+        c = (long long)num;
         num = c;
         end = "";
     }
@@ -47,6 +47,7 @@ void print_int(char *split, va_list list)
     }
     ft_putnbr(num);
     ft_putstr(end);
+    ft_putchar('\n');
 }
 
 void print_unsigned(va_list list)

@@ -30,6 +30,15 @@ int main(void)
   printf("%f \n", 199.873);
   ft_printf("%f \n", 199.873);
 
+  ft_putendl("\t#Testing the long and long long number#");
+  printf("%ld\n", 100000000000l);
+  ft_printf("%ld\n", 100000000000l);
+
+  ft_putendl("\t#Testing out the character printing#");
+  printf("%c\n", '&');
+  ft_printf("%c\n", '&');
+
+
 
 	return (0);
 }
